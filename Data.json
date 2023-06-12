@@ -4,7 +4,7 @@
         "Project": "Apache Commons Lang",
         "RepositoryLink": "https://github.com/apache/commons-lang",
         "CommitID": "c0707a1a24bc209caef5caa66f54e27e4230500e",
-        "TestClass": "ArchUtilsTest",
+        "TestClass": "org.apache.commons.lang3.ArchUtilsTest",
         "TestMethod": "testGetProcessor",
         "Amplified": false,
         "Error": true,
