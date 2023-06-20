@@ -247,77 +247,1647 @@
         "Project": "Apache Commons Lang",
         "RepositoryLink": "https://github.com/apache/commons-lang",
         "CommitID": "c0707a1a24bc209caef5caa66f54e27e4230500e",
-        "TestClass": "org.apache.commons.lang3.function.BooleanConsumerTest",
-        "TestMethod": "testAccept",
+        "TestClass": "org.apache.commons.lang3.ClassUtilsTest",
+        "TestMethod": "test_getCanonicalName_Class_String",
+        "Amplified": false,
+        "Error": true,
+        "ErrorStack": "[ERROR] Error(s) during compilation:
+        [ERROR] Pb(100) The method comparator() is undefined for the type ClassUtils
+        [ERROR] Pb(100) The method getComponentType(Class<ClassUtilsTest.CX[]>) is undefined for the type ClassUtils
+        [ERROR] Pb(100) The method getComponentType(null) is undefined for the type ClassUtils
+        [ERROR] Pb(83) Interfaces cannot be resolved to a variable
+        [ERROR] Pb(100) The method getComponentType(Class<ClassUtilsTest.CX[]>) is undefined for the type ClassUtils
+        [ERROR] Pb(100) The method getComponentType(null) is undefined for the type ClassUtils
+        [ERROR] Pb(83) Interfaces cannot be resolved to a variable
+        [INFO] Compiling with -proceedOnError -encoding UTF-8 -cp C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\jun
+        it-jupiter-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.
+        jar;C:\Users\Amjad Omar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.
+        jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platfor
+        m-engine-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit-pioneer\junit-pioneer\1.7.1\junit-pioneer-1.7.1.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platf
+        orm-commons-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-
+        2.2.jar;C:\Users\Amjad Omar\.m2\repository\org\easymock\easymock\4.3\easymock-4.3.jar;C:\Users\Amjad Omar\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Amjad Omar\.m2\repository\org\apac
+        he\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\
+        jmh-core-1.35.jar;C:\Users\Amjad Omar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\U
+        sers\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\Amjad Omar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\
+        Amjad Omar\IdeaProjects\commons-lang\target\classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\test-classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\/target/dspot/dependencies/; -d C:\Users\Amjad
+         Omar\IdeaProjects\commons-lang\target\test-classes -1.8 -preserveAllLocals -noExit -enableJavadoc -proc:none C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources\org\apache\commons\lang3\ClassUtilsTest.java
+        [WARNING] Something bad happened during selection before amplification.
+        java.lang.RuntimeException: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+                at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:82)
+                at eu.stamp_project.testrunner.listener.impl.CoverageImpl.load(CoverageImpl.java:110)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:387)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:351)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:292)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:275)
+                at eu.stamp_project.dspot.selector.JacocoCoverageSelector.selectToAmplify(JacocoCoverageSelector.java:71)
+                at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:145)
+                at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
+                at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+                at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+                at eu.stamp_project.Main.main(Main.java:20)
+                at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+                at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+                at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+                at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+                at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+                at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+                at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+                at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+                at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                at java.lang.reflect.Method.invoke(Method.java:498)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+        Caused by: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+                at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+                at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+                at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+                at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+                at java.nio.channels.FileChannel.open(FileChannel.java:287)
+                at java.nio.channels.FileChannel.open(FileChannel.java:335)
+                at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:66)
+                ... 36 more
+        
+        [INFO] 0 amplified test method(s) have been selected to be kept.
+        [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+        [INFO] elapsedTime 2701
+        java.lang.NullPointerException
+                at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:192)
+                at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
+                at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
+                at eu.stamp_project.Main.main(Main.java:20)
+                at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+                at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+                at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+                at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+                at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+                at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+                at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+                at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+                at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                at java.lang.reflect.Method.invoke(Method.java:498)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+        [ERROR] Something bad happened during the report fot test-criterion.
+        [ERROR] Dspot might not have output correctly!
+        [WARNING] DSpot could not obtain any amplified test method.
+        [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --inputAmplDistributor etc, and retry with a new configuration.
+        [INFO] Amplification succeed.
+        [INFO] Elapsed time 23235 ms
+        ",
+	    "BuildSuccess": false,
+        "ErrorReport": "",
+        "AmplificationReport": "",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": "",
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "",
+            "Output": ""
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 3,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "c0707a1a24bc209caef5caa66f54e27e4230500e",
+        "TestClass": "org.apache.commons.lang3.ClassUtilsTest",
+        "TestMethod": "test_getName_Class",
+        "Amplified": false,
+        "Error": true,
+        "ErrorStack": "[ERROR] Error(s) during compilation:
+        [ERROR] Pb(100) The method comparator() is undefined for the type ClassUtils
+        [ERROR] Pb(100) The method getComponentType(Class<ClassUtilsTest.CX[]>) is undefined for the type ClassUtils
+        [ERROR] Pb(100) The method getComponentType(null) is undefined for the type ClassUtils
+        [ERROR] Pb(83) Interfaces cannot be resolved to a variable
+        [ERROR] Pb(100) The method getComponentType(Class<ClassUtilsTest.CX[]>) is undefined for the type ClassUtils
+        [ERROR] Pb(100) The method getComponentType(null) is undefined for the type ClassUtils
+        [ERROR] Pb(83) Interfaces cannot be resolved to a variable
+        [INFO] Compiling with -proceedOnError -encoding UTF-8 -cp C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\jun
+        it-jupiter-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.
+        jar;C:\Users\Amjad Omar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.
+        jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platfor
+        m-engine-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit-pioneer\junit-pioneer\1.7.1\junit-pioneer-1.7.1.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platf
+        orm-commons-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-
+        2.2.jar;C:\Users\Amjad Omar\.m2\repository\org\easymock\easymock\4.3\easymock-4.3.jar;C:\Users\Amjad Omar\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Amjad Omar\.m2\repository\org\apac
+        he\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\
+        jmh-core-1.35.jar;C:\Users\Amjad Omar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\U
+        sers\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\Amjad Omar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\
+        Amjad Omar\IdeaProjects\commons-lang\target\classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\test-classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\/target/dspot/dependencies/; -d C:\Users\Amjad
+         Omar\IdeaProjects\commons-lang\target\test-classes -1.8 -preserveAllLocals -noExit -enableJavadoc -proc:none C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources\org\apache\commons\lang3\ClassUtilsTest.java
+        [WARNING] Something bad happened during selection before amplification.
+        java.lang.RuntimeException: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+                at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:82)
+                at eu.stamp_project.testrunner.listener.impl.CoverageImpl.load(CoverageImpl.java:110)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:387)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:351)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:292)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:275)
+                at eu.stamp_project.dspot.selector.JacocoCoverageSelector.selectToAmplify(JacocoCoverageSelector.java:71)
+                at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:145)
+                at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
+                at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+                at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+                at eu.stamp_project.Main.main(Main.java:20)
+                at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+                at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+                at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+                at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+                at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+                at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+                at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+                at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+                at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                at java.lang.reflect.Method.invoke(Method.java:498)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+        Caused by: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+                at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+                at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+                at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+                at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+                at java.nio.channels.FileChannel.open(FileChannel.java:287)
+                at java.nio.channels.FileChannel.open(FileChannel.java:335)
+                at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:66)
+                ... 36 more
+        
+        [INFO] 0 amplified test method(s) have been selected to be kept.
+        [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+        [INFO] elapsedTime 2710
+        java.lang.NullPointerException
+                at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:192)
+                at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
+                at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
+                at eu.stamp_project.Main.main(Main.java:20)
+                at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+                at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+                at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+                at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+                at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+                at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+                at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+                at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+                at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                at java.lang.reflect.Method.invoke(Method.java:498)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+        [ERROR] Something bad happened during the report fot test-criterion.
+        [ERROR] Dspot might not have output correctly!
+        [WARNING] DSpot could not obtain any amplified test method.
+        [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --inputAmplDistributor etc, and retry with a new configuration.
+        [INFO] Amplification succeed.
+        [INFO] Elapsed time 22291 ms",
+	    "BuildSuccess": false,
+        "ErrorReport": "",
+        "AmplificationReport": "",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": "",
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "",
+            "Output": ""
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 4,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "c0707a1a24bc209caef5caa66f54e27e4230500e",
+        "TestClass": "org.apache.commons.lang3.ClassUtilsTest",
+        "TestMethod": "test_getShortCanonicalName_Class",
+        "Amplified": false,
+        "Error": true,
+        "ErrorStack": "[ERROR] Error(s) during compilation:
+        [ERROR] Pb(100) The method comparator() is undefined for the type ClassUtils
+        [ERROR] Pb(100) The method getComponentType(Class<ClassUtilsTest.CX[]>) is undefined for the type ClassUtils
+        [ERROR] Pb(100) The method getComponentType(null) is undefined for the type ClassUtils
+        [ERROR] Pb(83) Interfaces cannot be resolved to a variable
+        [ERROR] Pb(100) The method getComponentType(Class<ClassUtilsTest.CX[]>) is undefined for the type ClassUtils
+        [ERROR] Pb(100) The method getComponentType(null) is undefined for the type ClassUtils
+        [ERROR] Pb(83) Interfaces cannot be resolved to a variable
+        [INFO] Compiling with -proceedOnError -encoding UTF-8 -cp C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\jun
+        it-jupiter-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.
+        jar;C:\Users\Amjad Omar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.
+        jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platfor
+        m-engine-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit-pioneer\junit-pioneer\1.7.1\junit-pioneer-1.7.1.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platf
+        orm-commons-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-
+        2.2.jar;C:\Users\Amjad Omar\.m2\repository\org\easymock\easymock\4.3\easymock-4.3.jar;C:\Users\Amjad Omar\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Amjad Omar\.m2\repository\org\apac
+        he\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\
+        jmh-core-1.35.jar;C:\Users\Amjad Omar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\U
+        sers\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\Amjad Omar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\
+        Amjad Omar\IdeaProjects\commons-lang\target\classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\test-classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\/target/dspot/dependencies/; -d C:\Users\Amjad
+         Omar\IdeaProjects\commons-lang\target\test-classes -1.8 -preserveAllLocals -noExit -enableJavadoc -proc:none C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources\org\apache\commons\lang3\ClassUtilsTest.java
+        [WARNING] Something bad happened during selection before amplification.
+        java.lang.RuntimeException: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+                at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:82)
+                at eu.stamp_project.testrunner.listener.impl.CoverageImpl.load(CoverageImpl.java:110)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:387)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:351)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:292)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:275)
+                at eu.stamp_project.dspot.selector.JacocoCoverageSelector.selectToAmplify(JacocoCoverageSelector.java:71)
+                at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:145)
+                at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
+                at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+                at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+                at eu.stamp_project.Main.main(Main.java:20)
+                at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+                at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+                at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+                at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+                at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+                at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+                at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+                at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+                at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                at java.lang.reflect.Method.invoke(Method.java:498)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+        Caused by: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+                at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+                at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+                at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+                at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+                at java.nio.channels.FileChannel.open(FileChannel.java:287)
+                at java.nio.channels.FileChannel.open(FileChannel.java:335)
+                at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:66)
+                ... 36 more
+        
+        [INFO] 0 amplified test method(s) have been selected to be kept.
+        [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+        [INFO] elapsedTime 2811
+        java.lang.NullPointerException
+                at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:192)
+                at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
+                at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
+                at eu.stamp_project.Main.main(Main.java:20)
+                at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+                at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+                at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+                at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+                at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+                at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+                at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+                at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+                at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                at java.lang.reflect.Method.invoke(Method.java:498)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+        [ERROR] Something bad happened during the report fot test-criterion.
+        [ERROR] Dspot might not have output correctly!
+        [WARNING] DSpot could not obtain any amplified test method.
+        [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --inputAmplDistributor etc, and retry with a new configuration.
+        [INFO] Amplification succeed.
+        [INFO] Elapsed time 25329 ms
+        ",
+	    "BuildSuccess": false,
+        "ErrorReport": "",
+        "AmplificationReport": "",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": "",
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "",
+            "Output": ""
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 5,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "c0707a1a24bc209caef5caa66f54e27e4230500e",
+        "TestClass": "org.apache.commons.lang3.RangeTest",
+        "TestMethod": "testBetweenWithCompare",
+        "Amplified": false,
+        "Error": true,
+        "ErrorStack": "[ERROR] Error(s) during compilation:
+        [ERROR] Pb(17) Type mismatch: cannot convert from Range<RangeTest.AbstractComparable> to Range<RangeTest.DerivedComparableA>
+        [ERROR] Pb(17) Type mismatch: cannot convert from Range<RangeTest.AbstractComparable> to Range<RangeTest.DerivedComparableB>
+        [ERROR] Pb(17) Type mismatch: cannot convert from Range<RangeTest.AbstractComparable> to Range<RangeTest.DerivedComparableA>
+        [ERROR] Pb(17) Type mismatch: cannot convert from Range<RangeTest.AbstractComparable> to Range<RangeTest.DerivedComparableB>
+        [INFO] Compiling with -proceedOnError -encoding UTF-8 -cp C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\jun
+        it-jupiter-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.
+        jar;C:\Users\Amjad Omar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.
+        jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platfor
+        m-engine-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit-pioneer\junit-pioneer\1.7.1\junit-pioneer-1.7.1.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platf
+        orm-commons-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-
+        2.2.jar;C:\Users\Amjad Omar\.m2\repository\org\easymock\easymock\4.3\easymock-4.3.jar;C:\Users\Amjad Omar\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Amjad Omar\.m2\repository\org\apac
+        he\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\
+        jmh-core-1.35.jar;C:\Users\Amjad Omar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\U
+        sers\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\Amjad Omar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\
+        Amjad Omar\IdeaProjects\commons-lang\target\classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\test-classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\/target/dspot/dependencies/; -d C:\Users\Amjad
+         Omar\IdeaProjects\commons-lang\target\test-classes -1.8 -preserveAllLocals -noExit -enableJavadoc -proc:none C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources\org\apache\commons\lang3\RangeTest.java
+        [WARNING] Something bad happened during selection before amplification.
+        java.lang.RuntimeException: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+                at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:82)
+                at eu.stamp_project.testrunner.listener.impl.CoverageImpl.load(CoverageImpl.java:110)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:387)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:351)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:292)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:275)
+                at eu.stamp_project.dspot.selector.JacocoCoverageSelector.selectToAmplify(JacocoCoverageSelector.java:71)
+                at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:145)
+                at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
+                at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+                at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+                at eu.stamp_project.Main.main(Main.java:20)
+                at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+                at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+                at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+                at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+                at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+                at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+                at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+                at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+                at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                at java.lang.reflect.Method.invoke(Method.java:498)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+        Caused by: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+                at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+                at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+                at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+                at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+                at java.nio.channels.FileChannel.open(FileChannel.java:287)
+                at java.nio.channels.FileChannel.open(FileChannel.java:335)
+                at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:66)
+                ... 36 more
+        
+        [INFO] 0 amplified test method(s) have been selected to be kept.
+        [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+        [INFO] elapsedTime 1766
+        java.lang.NullPointerException
+                at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:192)
+                at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
+                at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
+                at eu.stamp_project.Main.main(Main.java:20)
+                at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+                at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+                at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+                at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+                at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+                at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+                at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+                at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+                at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                at java.lang.reflect.Method.invoke(Method.java:498)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+        [ERROR] Something bad happened during the report fot test-criterion.
+        [ERROR] Dspot might not have output correctly!
+        [WARNING] DSpot could not obtain any amplified test method.
+        [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --inputAmplDistributor etc, and retry with a new configuration.
+        [INFO] Amplification succeed.
+        [INFO] Elapsed time 21665 ms",
+	    "BuildSuccess": false,
+        "ErrorReport": "",
+        "AmplificationReport": "",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": "",
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "",
+            "Output": ""
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 6,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "c0707a1a24bc209caef5caa66f54e27e4230500e",
+        "TestClass": "org.apache.commons.lang3.builder.EqualsBuilderTest",
+        "TestMethod": "testReflectionEqualsExcludeFields",
+        "Amplified": false,
+        "Error": true,
+        "ErrorStack": "[WARNING] Something bad happened during selection before amplification.
+        java.lang.RuntimeException: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+                at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:82)
+                at eu.stamp_project.testrunner.listener.impl.CoverageImpl.load(CoverageImpl.java:110)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:387)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:351)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:292)
+                at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:275)
+                at eu.stamp_project.dspot.selector.JacocoCoverageSelector.selectToAmplify(JacocoCoverageSelector.java:71)
+                at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:145)
+                at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
+                at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+                at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+                at eu.stamp_project.Main.main(Main.java:20)
+                at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+                at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+                at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+                at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+                at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+                at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+                at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+                at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+                at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                at java.lang.reflect.Method.invoke(Method.java:498)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+        Caused by: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+                at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+                at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+                at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+                at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+                at java.nio.channels.FileChannel.open(FileChannel.java:287)
+                at java.nio.channels.FileChannel.open(FileChannel.java:335)
+                at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:66)
+                ... 36 more
+        
+        [INFO] 0 amplified test method(s) have been selected to be kept.
+        [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+        [INFO] elapsedTime 2159
+        java.lang.NullPointerException
+                at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:192)
+                at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
+                at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
+                at eu.stamp_project.Main.main(Main.java:20)
+                at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+                at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+                at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+                at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+                at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+                at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+                at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+                at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+                at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+                at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+                at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+                at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                at java.lang.reflect.Method.invoke(Method.java:498)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+                at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+        [ERROR] Something bad happened during the report fot test-criterion.
+        [ERROR] Dspot might not have output correctly!
+        [WARNING] DSpot could not obtain any amplified test method.
+        [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --inputAmplDistributor etc, and retry with a new configuration.
+        [INFO] Amplification succeed.
+        [INFO] Elapsed time 22728 ms",
+	    "BuildSuccess": false,
+        "ErrorReport": "",
+        "AmplificationReport": "",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": "",
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "",
+            "Output": ""
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 7,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "c0707a1a24bc209caef5caa66f54e27e4230500e",
+        "TestClass": "org.apache.commons.lang3.math.NumberUtilsTest",
+        "TestMethod": "testMinDouble",
         "Amplified": true,
         "Error": false,
         "ErrorStack": "",
-        "BuildSuccess": true,
+	"BuildSuccess": true,
         "ErrorReport": "",
-        "OriginalMethod": "public void testAccept() {
-            final AtomicBoolean aBool = new AtomicBoolean();
-            accept(aBool::lazySet, true);
-            assertTrue(aBool.get());
-            accept(aBool::lazySet, false);
-            assertFalse(aBool.get());
-        }"
-        "AmplificationReport": "Initial instruction coverage: 16 / 66742
-        0.02%
-        Amplification results with 1 amplified tests.
-        Amplified instruction coverage: 276 / 66742
-        0.41%
-        ",
+        "AmplificationReport": "Initial instruction coverage: 1803 / 66742
+	2.70%
+	Amplification results with 1 amplified tests.
+	Amplified instruction coverage: 2063 / 66742
+	3.09%
+	",
         "Result": {
-            "InitialInstructionCoverage": "16 / 66742",
-            "InitialInstructionCoveragePercentage": "0.02%",
-            "NumberOfAmplifiedTest": "1",
-            "AmplifiedInstructionCoverage": "276 / 66742",
-            "AmplifiedInstructionCoveragePercentage": "0.41%",
-            "Input": "package org.apache.commons.lang3.function;
-            import java.util.concurrent.atomic.AtomicBoolean;
-            import org.apache.commons.lang3.AbstractLangTest;
-            import org.junit.jupiter.api.Test;
-            import static org.junit.jupiter.api.Assertions.assertFalse;
-            import static org.junit.jupiter.api.Assertions.assertTrue;
-            public class BooleanConsumerTest extends AbstractLangTest {
-                private BooleanConsumer accept(final BooleanConsumer consumer, final boolean expected) {
-                    consumer.accept(expected);
-                    return consumer;
-                }
-            
-                @Test
-                public void testAccept() {
-                    final AtomicBoolean aBool = new AtomicBoolean();
-                    accept(aBool::lazySet, true);
-                    assertTrue(aBool.get());
-                    accept(aBool::lazySet, false);
-                    assertFalse(aBool.get());
-                }
-            }",
-            "Output": "package org.apache.commons.lang3.function;
-            import java.util.concurrent.atomic.AtomicBoolean;
-            import org.apache.commons.lang3.AbstractLangTest;
-            import org.junit.jupiter.api.Assertions;
-            import org.junit.jupiter.api.Test;
-            public class BooleanConsumerTest extends AbstractLangTest {
-                private BooleanConsumer accept(final BooleanConsumer consumer, final boolean expected) {
-                    consumer.accept(expected);
-                    return consumer;
-                }
-            
-                @Test
-                public void testAccept_ass3() throws Exception {
-                    final AtomicBoolean aBool = new AtomicBoolean();
-                    accept(aBool::lazySet, true);
-                    boolean o_testAccept__4 = aBool.get();
-                    Assertions.assertTrue(o_testAccept__4);
-                    accept(aBool::lazySet, false);
-                    boolean o_testAccept__6 = aBool.get();
-                    Assertions.assertFalse(o_testAccept__6);
-                    Assertions.assertTrue(o_testAccept__4);
-                }
-            }"
+            "InitialInstructionCoverage": "1803 / 66742",
+            "InitialInstructionCoveragePercentage": "2.70%",
+            "NumberOfAmplifiedTest": 1,
+            "AmplifiedInstructionCoverage": "2063 / 66742",
+            "AmplifiedInstructionCoveragePercentage": "3.09%",
+            "Input": "public void testMinDouble() {
+        assertEquals(5.12, NumberUtils.min(5.12), "min(double[]) failed for array length 1");
+        assertEquals(6.23, NumberUtils.min(6.23, 9.34), "min(double[]) failed for array length 2");
+        assertEquals(-10.45, NumberUtils.min(-10.45, -5.56, 0, 5.67, 10.78), "min(double[]) failed for array length 5");
+        assertEquals(-10, NumberUtils.min(-10, -5, 0, 5, 10), 1.0E-4);
+        assertEquals(-10, NumberUtils.min(-5, 0, -10, 5, 10), 1.0E-4);
+
+    }",
+            "Output": "public void testMinDouble_ass3() throws Exception {
+        double o_testMinDouble__1 = NumberUtils.min(5.12);
+        Assertions.assertEquals(5.12, ((double) (o_testMinDouble__1)), 0.1);
+        double o_testMinDouble__2 = NumberUtils.min(6.23, 9.34);
+        Assertions.assertEquals(6.23, ((double) (o_testMinDouble__2)), 0.1);
+        double o_testMinDouble__3 = NumberUtils.min(-10.45, -5.56, 0, 5.67, 10.78);
+        Assertions.assertEquals(-10.45, ((double) (o_testMinDouble__3)), 0.1);
+        int o_testMinDouble__6 = NumberUtils.min(-10, -5, 0, 5, 10);
+        Assertions.assertEquals(-10, ((int) (o_testMinDouble__6)));
+        int o_testMinDouble__9 = NumberUtils.min(-5, 0, -10, 5, 10);
+        Assertions.assertEquals(-10, ((int) (o_testMinDouble__9)));
+
+        Assertions.assertEquals(5.12, ((double) (o_testMinDouble__1)), 0.1);
+        Assertions.assertEquals(6.23, ((double) (o_testMinDouble__2)), 0.1);
+        Assertions.assertEquals(-10.45, ((double) (o_testMinDouble__3)), 0.1);
+        Assertions.assertEquals(-10, ((int) (o_testMinDouble__6)));
+        Assertions.assertEquals(-10, ((int) (o_testMinDouble__9)));
+    }"
         },
         "Notes": ""
-    }
+    },
+    {
+        "ID": 8,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "c0707a1a24bc209caef5caa66f54e27e4230500e",
+        "TestClass": "org.apache.commons.lang3.math.NumberUtilsTest",
+        "TestMethod": "testMinFloat",
+        "Amplified": true,
+        "Error": false,
+        "ErrorStack": "",
+	"BuildSuccess": true,
+        "ErrorReport": "",
+        "AmplificationReport": "Initial instruction coverage: 1797 / 66742
+2.69%
+Amplification results with 1 amplified tests.
+Amplified instruction coverage: 2057 / 66742
+3.08%
+
+	",
+        "Result": {
+            "InitialInstructionCoverage": "1797 / 66742",
+            "InitialInstructionCoveragePercentage": "2.69%",
+            "NumberOfAmplifiedTest": 1,
+            "AmplifiedInstructionCoverage": "2057 / 66742",
+            "AmplifiedInstructionCoveragePercentage": "3.08%",
+            "Input": "public void testMinFloat() {
+        assertEquals(5.9F, NumberUtils.min(5.9F), "min(float[]) failed for array length 1");
+        assertEquals(6.8F, NumberUtils.min(6.8F, 9.7F), "min(float[]) failed for array length 2");
+        assertEquals(-10.6F, NumberUtils.min(-10.6F, -5.5F, 0, 5.4F, 10.3F), "min(float[]) failed for array length 5");
+        assertEquals(-10, NumberUtils.min(-10, -5, 0, 5, 10), 1.0E-4F);
+        assertEquals(-10, NumberUtils.min(-5, 0, -10, 5, 10), 1.0E-4F);
+
+    }",
+            "Output": "public void testMinFloat_ass3() throws Exception {
+        float o_testMinFloat__1 = NumberUtils.min(5.9F);
+        Assertions.assertEquals(5.9F, ((float) (o_testMinFloat__1)), 0.1);
+        float o_testMinFloat__2 = NumberUtils.min(6.8F, 9.7F);
+        Assertions.assertEquals(6.8F, ((float) (o_testMinFloat__2)), 0.1);
+        float o_testMinFloat__3 = NumberUtils.min(-10.6F, -5.5F, 0, 5.4F, 10.3F);
+        Assertions.assertEquals(-10.6F, ((float) (o_testMinFloat__3)), 0.1);
+        int o_testMinFloat__6 = NumberUtils.min(-10, -5, 0, 5, 10);
+        Assertions.assertEquals(-10, ((int) (o_testMinFloat__6)));
+        int o_testMinFloat__9 = NumberUtils.min(-5, 0, -10, 5, 10);
+        Assertions.assertEquals(-10, ((int) (o_testMinFloat__9)));
+
+        Assertions.assertEquals(5.9F, ((float) (o_testMinFloat__1)), 0.1);
+        Assertions.assertEquals(6.8F, ((float) (o_testMinFloat__2)), 0.1);
+        Assertions.assertEquals(-10.6F, ((float) (o_testMinFloat__3)), 0.1);
+        Assertions.assertEquals(-10, ((int) (o_testMinFloat__6)));
+        Assertions.assertEquals(-10, ((int) (o_testMinFloat__9)));
+    }"
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 9,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "51b2cabf2c3737de06fc889b39d40240d1b134c2",
+        "TestClass": "org.apache.commons.lang3.ArrayUtilsTest",
+        "TestMethod": "testSwapCharRange",
+        "Amplified": false,
+        "Error": true,
+        "ErrorStack": "[WARNING] Something bad happened during selection before amplification.
+java.lang.RuntimeException: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:82)
+        at eu.stamp_project.testrunner.listener.impl.CoverageImpl.load(CoverageImpl.java:110)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:387)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:351)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:292)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:275)
+        at eu.stamp_project.dspot.selector.JacocoCoverageSelector.selectToAmplify(JacocoCoverageSelector.java:71)
+        at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:145)
+        at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
+        at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+        at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+        at eu.stamp_project.Main.main(Main.java:20)
+        at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+        at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+        at java.nio.channels.FileChannel.open(FileChannel.java:287)
+        at java.nio.channels.FileChannel.open(FileChannel.java:335)
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:66)
+        ... 36 more
+
+[INFO] 0 amplified test method(s) have been selected to be kept.
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 4719
+java.lang.NullPointerException
+        at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:192)
+        at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
+        at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
+        at eu.stamp_project.Main.main(Main.java:20)
+        at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+[ERROR] Something bad happened during the report fot test-criterion.
+[ERROR] Dspot might not have output correctly!",
+	"BuildSuccess": true,
+        "ErrorReport": "",
+        "AmplificationReport": "",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": 0,
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "",
+            "Output": ""
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 10,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "51b2cabf2c3737de06fc889b39d40240d1b134c2",
+        "TestClass": "org.apache.commons.lang3.ArrayUtilsTest",
+        "TestMethod": "testSwapFloatRange",
+        "Amplified": false,
+        "Error": true,
+        "ErrorStack": "[ERROR] Error(s) during compilation:
+[ERROR] Pb(100) The method containsAny(null, null) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(null, String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String[]) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method getComponentType(ArrayUtilsTest.TestClass[]) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method getComponentType(null) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(null, String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method containsAny(Object[], String[]) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method getComponentType(ArrayUtilsTest.TestClass[]) is undefined for the type ArrayUtils
+[ERROR] Pb(100) The method getComponentType(null) is undefined for the type ArrayUtils
+[INFO] Compiling with -proceedOnError -encoding UTF-8 -cp C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\jun
+it-jupiter-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.
+jar;C:\Users\Amjad Omar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.
+jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platfor
+m-engine-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit-pioneer\junit-pioneer\1.7.1\junit-pioneer-1.7.1.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platf
+orm-commons-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-
+2.2.jar;C:\Users\Amjad Omar\.m2\repository\org\easymock\easymock\4.3\easymock-4.3.jar;C:\Users\Amjad Omar\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Amjad Omar\.m2\repository\org\apac
+he\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\
+jmh-core-1.35.jar;C:\Users\Amjad Omar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\U
+sers\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\Amjad Omar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\
+Amjad Omar\IdeaProjects\commons-lang\target\classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\test-classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\/target/dspot/dependencies/; -d C:\Users\Amjad
+ Omar\IdeaProjects\commons-lang\target\test-classes -1.8 -preserveAllLocals -noExit -enableJavadoc -proc:none C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources\org\apache\commons\lang3\ArrayUtilsTest.java
+[WARNING] Something bad happened during selection before amplification.
+java.lang.RuntimeException: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:82)
+        at eu.stamp_project.testrunner.listener.impl.CoverageImpl.load(CoverageImpl.java:110)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:387)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:351)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:292)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:275)
+        at eu.stamp_project.dspot.selector.JacocoCoverageSelector.selectToAmplify(JacocoCoverageSelector.java:71)
+        at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:145)
+        at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
+        at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+        at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+        at eu.stamp_project.Main.main(Main.java:20)
+        at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+        at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+        at java.nio.channels.FileChannel.open(FileChannel.java:287)
+        at java.nio.channels.FileChannel.open(FileChannel.java:335)
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:66)
+        ... 36 more
+",
+	"BuildSuccess": true,
+        "ErrorReport": "",
+        "AmplificationReport": "",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": 0,
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "",
+            "Output": ""
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 11,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "51b2cabf2c3737de06fc889b39d40240d1b134c2",
+        "TestClass": "org.apache.commons.lang3.ArrayUtilsTest",
+        "TestMethod": "testSwapDoubleRange",
+        "Amplified": false,
+        "Error": true,
+        "ErrorStack": "[WARNING] Something bad happened during selection before amplification.
+java.lang.RuntimeException: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:82)
+        at eu.stamp_project.testrunner.listener.impl.CoverageImpl.load(CoverageImpl.java:110)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:387)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:351)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:292)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:275)
+        at eu.stamp_project.dspot.selector.JacocoCoverageSelector.selectToAmplify(JacocoCoverageSelector.java:71)
+        at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:145)
+        at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
+        at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+        at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+        at eu.stamp_project.Main.main(Main.java:20)
+        at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+        at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+        at java.nio.channels.FileChannel.open(FileChannel.java:287)
+        at java.nio.channels.FileChannel.open(FileChannel.java:335)
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:66)
+        ... 36 more
+
+[INFO] 0 amplified test method(s) have been selected to be kept.
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 4411
+java.lang.NullPointerException
+        at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:192)
+        at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
+        at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
+        at eu.stamp_project.Main.main(Main.java:20)
+        at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+[ERROR] Something bad happened during the report fot test-criterion.
+[ERROR] Dspot might not have output correctly!
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --inputAmplDistributor etc, and retry with a new configuration.
+[INFO] Amplification succeed.
+[INFO] Elapsed time 25215 ms
+",
+	"BuildSuccess": true,
+        "ErrorReport": "",
+        "AmplificationReport": "",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": 0,
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "",
+            "Output": ""
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 12,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "51b2cabf2c3737de06fc889b39d40240d1b134c2",
+        "TestClass": "org.apache.commons.lang3.ArrayUtilsTest",
+        "TestMethod": "testSwapIntRange",
+        "Amplified": false,
+        "Error": true,
+        "ErrorStack": "[WARNING] Something bad happened during selection before amplification.
+java.lang.RuntimeException: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:82)
+        at eu.stamp_project.testrunner.listener.impl.CoverageImpl.load(CoverageImpl.java:110)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:387)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:351)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:292)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:275)
+        at eu.stamp_project.dspot.selector.JacocoCoverageSelector.selectToAmplify(JacocoCoverageSelector.java:71)
+        at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:145)
+        at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
+        at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+        at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+        at eu.stamp_project.Main.main(Main.java:20)
+        at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+        at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+        at java.nio.channels.FileChannel.open(FileChannel.java:287)
+        at java.nio.channels.FileChannel.open(FileChannel.java:335)
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:66)
+        ... 36 more
+
+[INFO] 0 amplified test method(s) have been selected to be kept.
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 4555
+java.lang.NullPointerException
+        at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:192)
+        at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
+        at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
+        at eu.stamp_project.Main.main(Main.java:20)
+        at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+[ERROR] Something bad happened during the report fot test-criterion.
+[ERROR] Dspot might not have output correctly!
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --inputAmplDistributor etc, and retry with a new configuration.
+[INFO] Amplification succeed.",
+	"BuildSuccess": true,
+        "ErrorReport": "",
+        "AmplificationReport": "",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": 0,
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "",
+            "Output": ""
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 13,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "51b2cabf2c3737de06fc889b39d40240d1b134c2",
+        "TestClass": "org.apache.commons.lang3.ArrayUtilsTest",
+        "TestMethod": "testSwapLongRange",
+        "Amplified": false,
+        "Error": true,
+        "ErrorStack": "[WARNING] Something bad happened during selection before amplification.
+java.lang.RuntimeException: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:82)
+        at eu.stamp_project.testrunner.listener.impl.CoverageImpl.load(CoverageImpl.java:110)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:387)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:351)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:292)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:275)
+        at eu.stamp_project.dspot.selector.JacocoCoverageSelector.selectToAmplify(JacocoCoverageSelector.java:71)
+        at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:145)
+        at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
+        at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+        at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+        at eu.stamp_project.Main.main(Main.java:20)
+        at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+        at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+        at java.nio.channels.FileChannel.open(FileChannel.java:287)
+        at java.nio.channels.FileChannel.open(FileChannel.java:335)
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:66)
+        ... 36 more
+
+[INFO] 0 amplified test method(s) have been selected to be kept.
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 4332
+java.lang.NullPointerException
+        at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:192)
+        at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
+        at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
+        at eu.stamp_project.Main.main(Main.java:20)
+        at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+[ERROR] Something bad happened during the report fot test-criterion.
+[ERROR] Dspot might not have output correctly!
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --inputAmplDistributor etc, and retry with a new configuration.
+[INFO] Amplification succeed.
+",
+	"BuildSuccess": true,
+        "ErrorReport": "",
+        "AmplificationReport": "",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": 0,
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "",
+            "Output": ""
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 14,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "51b2cabf2c3737de06fc889b39d40240d1b134c2",
+        "TestClass": "org.apache.commons.lang3.ArrayUtilsTest",
+        "TestMethod": "testSwapObjectRange",
+        "Amplified": false,
+        "Error": true,
+        "ErrorStack": "[WARNING] Something bad happened during selection before amplification.
+java.lang.RuntimeException: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:82)
+        at eu.stamp_project.testrunner.listener.impl.CoverageImpl.load(CoverageImpl.java:110)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:387)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:351)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:292)
+        at eu.stamp_project.testrunner.EntryPoint.runCoverage(EntryPoint.java:275)
+        at eu.stamp_project.dspot.selector.JacocoCoverageSelector.selectToAmplify(JacocoCoverageSelector.java:71)
+        at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:145)
+        at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
+        at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+        at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+        at eu.stamp_project.Main.main(Main.java:20)
+        at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\Amjad Omar\IdeaProjects\commons-lang\.\target\Coverage.dat
+        at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+        at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+        at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+        at java.nio.channels.FileChannel.open(FileChannel.java:287)
+        at java.nio.channels.FileChannel.open(FileChannel.java:335)
+        at eu.stamp_project.testrunner.listener.utils.ListenerUtils.loadFromMemoryMappedFile(ListenerUtils.java:66)
+        ... 36 more
+
+[INFO] 0 amplified test method(s) have been selected to be kept.
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 4908
+java.lang.NullPointerException
+        at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:192)
+        at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
+        at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
+        at eu.stamp_project.Main.main(Main.java:20)
+        at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:299)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:963)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:296)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+[ERROR] Something bad happened during the report fot test-criterion.
+[ERROR] Dspot might not have output correctly!
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --inputAmplDistributor etc, and retry with a new configuration.
+[INFO] Amplification succeed.
+[INFO] Elapsed time 31633 ms
+",
+	"BuildSuccess": true,
+        "ErrorReport": "",
+        "AmplificationReport": "",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": 0,
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "",
+            "Output": ""
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 15,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "51b2cabf2c3737de06fc889b39d40240d1b134c2",
+        "TestClass": "org.apache.commons.lang3.StringUtilsTest",
+        "TestMethod": "testSwapCase_String",
+        "Amplified": true,
+        "Error": true,
+        "ErrorStack": "[ERROR] Error(s) during compilation:
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[INFO] Compiling with -proceedOnError -encoding UTF-8 -cp C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\jun
+it-jupiter-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.
+jar;C:\Users\Amjad Omar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.
+jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platfor
+m-engine-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit-pioneer\junit-pioneer\1.7.1\junit-pioneer-1.7.1.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platf
+orm-commons-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-
+2.2.jar;C:\Users\Amjad Omar\.m2\repository\org\easymock\easymock\4.3\easymock-4.3.jar;C:\Users\Amjad Omar\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Amjad Omar\.m2\repository\org\apac
+he\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\
+jmh-core-1.35.jar;C:\Users\Amjad Omar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\U
+sers\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\Amjad Omar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\
+Amjad Omar\IdeaProjects\commons-lang\target\classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\test-classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\/target/dspot/dependencies/; -d C:\Users\Amjad
+ Omar\IdeaProjects\commons-lang\target\test-classes -1.8 -preserveAllLocals -noExit -enableJavadoc -proc:none C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources\org\apache\commons\lang3\StringUtilsTest.java
+[INFO] 1 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+100% |================================================== ]/
+[INFO] Run instrumented tests. (3)
+[INFO] Compiling with -proceedOnError -encoding UTF-8 -cp C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\jun
+it-jupiter-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.
+jar;C:\Users\Amjad Omar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.
+jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platfor
+m-engine-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit-pioneer\junit-pioneer\1.7.1\junit-pioneer-1.7.1.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platf
+orm-commons-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-
+2.2.jar;C:\Users\Amjad Omar\.m2\repository\org\easymock\easymock\4.3\easymock-4.3.jar;C:\Users\Amjad Omar\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Amjad Omar\.m2\repository\org\apac
+he\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\
+jmh-core-1.35.jar;C:\Users\Amjad Omar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\U
+sers\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\Amjad Omar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\
+Amjad Omar\IdeaProjects\commons-lang\target\classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\test-classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\/target/dspot/dependencies/; -d C:\Users\Amjad
+ Omar\IdeaProjects\commons-lang\target\test-classes -1.8 -preserveAllLocals -noExit -enableJavadoc -proc:none C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources\org\apache\commons\lang3\StringUtilsTest.java
+[INFO] Generating assertions...
+[INFO] 1 new tests with assertions generated
+[INFO] Compiling with -proceedOnError -encoding UTF-8 -cp C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\jun
+it-jupiter-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.
+jar;C:\Users\Amjad Omar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.
+jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platfor
+m-engine-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit-pioneer\junit-pioneer\1.7.1\junit-pioneer-1.7.1.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platf
+orm-commons-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-
+2.2.jar;C:\Users\Amjad Omar\.m2\repository\org\easymock\easymock\4.3\easymock-4.3.jar;C:\Users\Amjad Omar\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Amjad Omar\.m2\repository\org\apac
+he\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\
+jmh-core-1.35.jar;C:\Users\Amjad Omar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\U
+sers\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\Amjad Omar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\
+Amjad Omar\IdeaProjects\commons-lang\target\classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\test-classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\/target/dspot/dependencies/; -d C:\Users\Amjad
+ Omar\IdeaProjects\commons-lang\target\test-classes -1.8 -preserveAllLocals -noExit -enableJavadoc -proc:none C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources\org\apache\commons\lang3\StringUtilsTest.java
+[ERROR] Error(s) during compilation:
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[INFO] Compiling with -proceedOnError -encoding UTF-8 -cp C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\jun
+it-jupiter-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.
+jar;C:\Users\Amjad Omar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.
+jar;C:\Users\Amjad Omar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platfor
+m-engine-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit-pioneer\junit-pioneer\1.7.1\junit-pioneer-1.7.1.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platf
+orm-commons-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\Amjad Omar\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-
+2.2.jar;C:\Users\Amjad Omar\.m2\repository\org\easymock\easymock\4.3\easymock-4.3.jar;C:\Users\Amjad Omar\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Amjad Omar\.m2\repository\org\apac
+he\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\
+jmh-core-1.35.jar;C:\Users\Amjad Omar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Amjad Omar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\U
+sers\Amjad Omar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar;C:\Users\Amjad Omar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\
+Amjad Omar\IdeaProjects\commons-lang\target\classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\test-classes;C:\Users\Amjad Omar\IdeaProjects\commons-lang\/target/dspot/dependencies/; -d C:\Users\Amjad
+ Omar\IdeaProjects\commons-lang\target\test-classes -1.8 -preserveAllLocals -noExit -enableJavadoc -proc:none C:\Users\Amjad Omar\IdeaProjects\commons-lang\target\dspot\tmp_test_sources\org\apache\commons\lang3\StringUtilsTest.java
+[INFO] Assertion amplification: 1 test method(s) have been successfully amplified.
+[INFO] 1 amplified test method(s) have been selected to be kept.
+[INFO] 1 amplified test methods has been selected to be kept. (global: 1)
+[INFO] elapsedTime 12426
+",
+	"BuildSuccess": true,
+        "ErrorReport": "",
+        "AmplificationReport": "n/a",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": 0,
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "public void testSwapCase_String() {
+        assertNull(StringUtils.swapCase(null));
+        assertEquals("", StringUtils.swapCase(""));
+        assertEquals("  ", StringUtils.swapCase("  "));
+
+        assertEquals("i", WordUtils.swapCase("I"));
+        assertEquals("I", WordUtils.swapCase("i"));
+        assertEquals("I AM HERE 123", StringUtils.swapCase("i am here 123"));
+        assertEquals("i aM hERE 123", StringUtils.swapCase("I Am Here 123"));
+        assertEquals("I AM here 123", StringUtils.swapCase("i am HERE 123"));
+        assertEquals("i am here 123", StringUtils.swapCase("I AM HERE 123"));
+
+        final String test = "This String contains a TitleCase character: \u01C8";
+        final String expect = "tHIS sTRING CONTAINS A tITLEcASE CHARACTER: \u01C9";
+        assertEquals(expect, WordUtils.swapCase(test));
+        //assertEquals(expect, StringUtils.swapCase(test));
+    }",
+            "Output": " public void testSwapCase_String_ass3() throws Exception {
+        String o_testSwapCase_String__1 = StringUtils.swapCase(null);
+        Assertions.assertNull(o_testSwapCase_String__1);
+        String o_testSwapCase_String__2 = StringUtils.swapCase("");
+        Assertions.assertEquals("", o_testSwapCase_String__2);
+        String o_testSwapCase_String__3 = StringUtils.swapCase("  ");
+        Assertions.assertEquals("  ", o_testSwapCase_String__3);
+        String o_testSwapCase_String__4 = WordUtils.swapCase("I");
+        Assertions.assertEquals("i", o_testSwapCase_String__4);
+        String o_testSwapCase_String__5 = WordUtils.swapCase("i");
+        Assertions.assertEquals("I", o_testSwapCase_String__5);
+        String o_testSwapCase_String__6 = StringUtils.swapCase("i am here 123");
+        Assertions.assertEquals("I AM HERE 123", o_testSwapCase_String__6);
+        String o_testSwapCase_String__7 = StringUtils.swapCase("I Am Here 123");
+        Assertions.assertEquals("i aM hERE 123", o_testSwapCase_String__7);
+        String o_testSwapCase_String__8 = StringUtils.swapCase("i am HERE 123");
+        Assertions.assertEquals("I AM here 123", o_testSwapCase_String__8);
+        String o_testSwapCase_String__9 = StringUtils.swapCase("I AM HERE 123");
+        Assertions.assertEquals("i am here 123", o_testSwapCase_String__9);
+        final String test = "This String contains a TitleCase character: ?";
+        Assertions.assertEquals("This String contains a TitleCase character: ?", test);
+        final String expect = "tHIS sTRING CONTAINS A tITLEcASE CHARACTER: ?";
+        Assertions.assertEquals("tHIS sTRING CONTAINS A tITLEcASE CHARACTER: ?", expect);
+        String o_testSwapCase_String__12 = WordUtils.swapCase(test);
+        Assertions.assertEquals("tHIS sTRING CONTAINS A tITLEcASE CHARACTER: ?", o_testSwapCase_String__12);
+
+        Assertions.assertNull(o_testSwapCase_String__1);
+        Assertions.assertEquals("", o_testSwapCase_String__2);
+        Assertions.assertEquals("  ", o_testSwapCase_String__3);
+        Assertions.assertEquals("i", o_testSwapCase_String__4);
+        Assertions.assertEquals("I", o_testSwapCase_String__5);
+        Assertions.assertEquals("I AM HERE 123", o_testSwapCase_String__6);
+        Assertions.assertEquals("i aM hERE 123", o_testSwapCase_String__7);
+        Assertions.assertEquals("I AM here 123", o_testSwapCase_String__8);
+        Assertions.assertEquals("i am here 123", o_testSwapCase_String__9);
+        Assertions.assertEquals("This String contains a TitleCase character: ?", test);
+        Assertions.assertEquals("tHIS sTRING CONTAINS A tITLEcASE CHARACTER: ?", expect);
+        Assertions.assertEquals("tHIS sTRING CONTAINS A tITLEcASE CHARACTER: ?", o_testSwapCase_String__12);
+    }"
+        },
+        "Notes": ""
+    },
+    {
+        "ID": 16,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "51b2cabf2c3737de06fc889b39d40240d1b134c2",
+        "TestClass": "org.apache.commons.lang3.StringUtilsTest",
+        "TestMethod": "testJoin_ArrayCharSeparator",
+        "Amplified": true,
+        "Error": true,
+        "ErrorStack": "",
+	"BuildSuccess": true,
+        "ErrorReport": "[ERROR] Error(s) during compilation:
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (null, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+[ERROR] Pb(115) The method removeStart(String, String) in the type StringUtils is not applicable for the arguments (String, char)
+",
+        "AmplificationReport": "n/a",
+        "Result": {
+            "InitialInstructionCoverage": "",
+            "InitialInstructionCoveragePercentage": "",
+            "NumberOfAmplifiedTest": 0,
+            "AmplifiedInstructionCoverage": "",
+            "AmplifiedInstructionCoveragePercentage": "",
+            "Input": "public void testJoin_ArrayCharSeparator() {
+        assertNull(StringUtils.join(((Object[]) (null)), ','));
+        assertEquals(TEXT_LIST_CHAR, StringUtils.join(ARRAY_LIST, SEPARATOR_CHAR));
+        assertEquals("", StringUtils.join(EMPTY_ARRAY_LIST, SEPARATOR_CHAR));
+        assertEquals(";;foo", StringUtils.join(MIXED_ARRAY_LIST, SEPARATOR_CHAR));
+        assertEquals("foo;2", StringUtils.join(MIXED_TYPE_LIST, SEPARATOR_CHAR));
+        assertNull(StringUtils.join(((Object[]) (null)), ',', 0, 1));
+        assertEquals("/", StringUtils.join(MIXED_ARRAY_LIST, '/', 0, StringUtilsTest.MIXED_ARRAY_LIST.length - 1));
+        assertEquals("foo", StringUtils.join(MIXED_TYPE_LIST, '/', 0, 1));
+        assertEquals("null", StringUtils.join(NULL_TO_STRING_LIST, '/', 0, 1));
+        assertEquals("foo/2", StringUtils.join(MIXED_TYPE_LIST, '/', 0, 2));
+        assertEquals("2", StringUtils.join(MIXED_TYPE_LIST, '/', 1, 2));
+
+    }",
+            "Output": "public void testJoin_ArrayCharSeparator_ass3() throws Exception {
+        String o_testJoin_ArrayCharSeparator__1 = StringUtils.join(((Object[]) (null)), ',');
+        Assertions.assertNull(o_testJoin_ArrayCharSeparator__1);
+        String o_testJoin_ArrayCharSeparator__2 = StringUtils.join(ARRAY_LIST, SEPARATOR_CHAR);
+        Assertions.assertEquals("foo;bar;baz", o_testJoin_ArrayCharSeparator__2);
+        String o_testJoin_ArrayCharSeparator__3 = StringUtils.join(EMPTY_ARRAY_LIST, SEPARATOR_CHAR);
+        Assertions.assertEquals("", o_testJoin_ArrayCharSeparator__3);
+        String o_testJoin_ArrayCharSeparator__4 = StringUtils.join(MIXED_ARRAY_LIST, SEPARATOR_CHAR);
+        Assertions.assertEquals(";;foo", o_testJoin_ArrayCharSeparator__4);
+        String o_testJoin_ArrayCharSeparator__5 = StringUtils.join(MIXED_TYPE_LIST, SEPARATOR_CHAR);
+        Assertions.assertEquals("foo;2", o_testJoin_ArrayCharSeparator__5);
+        String o_testJoin_ArrayCharSeparator__6 = StringUtils.join(((Object[]) (null)), ',', 0, 1);
+        Assertions.assertNull(o_testJoin_ArrayCharSeparator__6);
+        StringUtils.join(MIXED_ARRAY_LIST, '/', 0, StringUtilsTest.MIXED_ARRAY_LIST.length - 1);
+        String o_testJoin_ArrayCharSeparator__8 = StringUtils.join(MIXED_TYPE_LIST, '/', 0, 1);
+        Assertions.assertEquals("foo", o_testJoin_ArrayCharSeparator__8);
+        String o_testJoin_ArrayCharSeparator__9 = StringUtils.join(NULL_TO_STRING_LIST, '/', 0, 1);
+        Assertions.assertEquals("null", o_testJoin_ArrayCharSeparator__9);
+        StringUtils.join(MIXED_TYPE_LIST, '/', 0, 2);
+        String o_testJoin_ArrayCharSeparator__11 = StringUtils.join(MIXED_TYPE_LIST, '/', 1, 2);
+        Assertions.assertEquals("2", o_testJoin_ArrayCharSeparator__11);
+
+        Assertions.assertNull(o_testJoin_ArrayCharSeparator__1);
+        Assertions.assertEquals("foo;bar;baz", o_testJoin_ArrayCharSeparator__2);
+        Assertions.assertEquals("", o_testJoin_ArrayCharSeparator__3);
+        Assertions.assertEquals(";;foo", o_testJoin_ArrayCharSeparator__4);
+        Assertions.assertEquals("foo;2", o_testJoin_ArrayCharSeparator__5);
+        Assertions.assertNull(o_testJoin_ArrayCharSeparator__6);
+        Assertions.assertEquals("foo", o_testJoin_ArrayCharSeparator__8);
+        Assertions.assertEquals("null", o_testJoin_ArrayCharSeparator__9);
+        Assertions.assertEquals("2", o_testJoin_ArrayCharSeparator__11);
+    }"
+        },
+        "Notes": ""
+    },
+   
 ]
