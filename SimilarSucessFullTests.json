@@ -1,0 +1,82 @@
+[
+    
+    {
+        "ID": 2,
+        "MatchedId": 1,
+        "Project": "Apache Commons Lang",
+        "RepositoryLink": "https://github.com/apache/commons-lang",
+        "CommitID": "c0707a1a24bc209caef5caa66f54e27e4230500e",
+        "TestClass": "org.apache.commons.lang3.function.BooleanConsumerTest",
+        "TestMethod": "testAccept",
+        "Amplified": true,
+        "Error": false,
+        "ErrorStack": "",
+        "BuildSuccess": true,
+        "ErrorReport": "",
+        "OriginalMethod": "public void testAccept() {
+            final AtomicBoolean aBool = new AtomicBoolean();
+            accept(aBool::lazySet, true);
+            assertTrue(aBool.get());
+            accept(aBool::lazySet, false);
+            assertFalse(aBool.get());
+        }"
+        "AmplificationReport": "Initial instruction coverage: 16 / 66742
+        0.02%
+        Amplification results with 1 amplified tests.
+        Amplified instruction coverage: 276 / 66742
+        0.41%
+        ",
+        "Result": {
+            "InitialInstructionCoverage": "16 / 66742",
+            "InitialInstructionCoveragePercentage": "0.02%",
+            "NumberOfAmplifiedTest": "1",
+            "AmplifiedInstructionCoverage": "276 / 66742",
+            "AmplifiedInstructionCoveragePercentage": "0.41%",
+            "Input": "package org.apache.commons.lang3.function;
+            import java.util.concurrent.atomic.AtomicBoolean;
+            import org.apache.commons.lang3.AbstractLangTest;
+            import org.junit.jupiter.api.Test;
+            import static org.junit.jupiter.api.Assertions.assertFalse;
+            import static org.junit.jupiter.api.Assertions.assertTrue;
+            public class BooleanConsumerTest extends AbstractLangTest {
+                private BooleanConsumer accept(final BooleanConsumer consumer, final boolean expected) {
+                    consumer.accept(expected);
+                    return consumer;
+                }
+            
+                @Test
+                public void testAccept() {
+                    final AtomicBoolean aBool = new AtomicBoolean();
+                    accept(aBool::lazySet, true);
+                    assertTrue(aBool.get());
+                    accept(aBool::lazySet, false);
+                    assertFalse(aBool.get());
+                }
+            }",
+            "Output": "package org.apache.commons.lang3.function;
+            import java.util.concurrent.atomic.AtomicBoolean;
+            import org.apache.commons.lang3.AbstractLangTest;
+            import org.junit.jupiter.api.Assertions;
+            import org.junit.jupiter.api.Test;
+            public class BooleanConsumerTest extends AbstractLangTest {
+                private BooleanConsumer accept(final BooleanConsumer consumer, final boolean expected) {
+                    consumer.accept(expected);
+                    return consumer;
+                }
+            
+                @Test
+                public void testAccept_ass3() throws Exception {
+                    final AtomicBoolean aBool = new AtomicBoolean();
+                    accept(aBool::lazySet, true);
+                    boolean o_testAccept__4 = aBool.get();
+                    Assertions.assertTrue(o_testAccept__4);
+                    accept(aBool::lazySet, false);
+                    boolean o_testAccept__6 = aBool.get();
+                    Assertions.assertFalse(o_testAccept__6);
+                    Assertions.assertTrue(o_testAccept__4);
+                }
+            }"
+        },
+        "Notes": ""
+    }
+]
