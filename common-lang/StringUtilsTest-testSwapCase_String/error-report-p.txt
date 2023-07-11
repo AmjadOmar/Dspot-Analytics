@@ -1,16 +1,13 @@
-mvn : eu.stamp_project.dspot.common.miscellaneous.AmplificationException: Every test methods are uncompilable
-At line:1 char:1
-+ mvn eu.stamp-project:dspot-maven:amplify-unit-tests -Dtest-criterion= ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (eu.stamp_projec...re uncompilable:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-	at eu.stamp_project.dspot.common.compilation.TestCompiler.compileAndDiscardUncompilableMethods(TestCompiler.java:182)
-	at eu.stamp_project.dspot.common.compilation.TestCompiler.compileAndRun(TestCompiler.java:154)
-	at eu.stamp_project.dspot.common.compilation.TestCompiler.compileRunAndDiscardUncompilableAndFailingTestMethods(TestCompiler.java:88)
-	at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:134)
-	at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
-	at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
+DSpot encountered 2 error(s) during amplification.
+Something bad happened during selection to keep amplified tests (post-amplification).
+spoon.support.compiler.SnippetCompilationError: The final field StringUtilsTest.WHITESPACE cannot be assigned at StringUtilsTest.java:38
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.reportProblemsWhenCompiling(JDTBasedSpoonCompiler.java:615)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.compile(JDTBasedSpoonCompiler.java:169)
+	at eu.stamp_project.dspot.common.compilation.DSpotCompiler.compile(DSpotCompiler.java:139)
+	at eu.stamp_project.dspot.selector.PitMutantScoreSelector.selectToKeep(PitMutantScoreSelector.java:183)
+	at eu.stamp_project.dspot.DSpot.selectImprovingTestCases(DSpot.java:234)
+	at eu.stamp_project.dspot.DSpot.onlyAssertionGeneration(DSpot.java:102)
+	at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:73)
 	at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
 	at eu.stamp_project.Main.main(Main.java:20)
 	at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
@@ -38,13 +35,13 @@ At line:1 char:1
 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
-spoon.support.compiler.SnippetCompilationError: The import org.junit.Assert cannot be resolved at ArrayUtilsTest.java:2
-	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.reportProblemsWhenCompiling(JDTBasedSpoonCompiler.java:615)
-	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.compile(JDTBasedSpoonCompiler.java:169)
-	at eu.stamp_project.dspot.common.compilation.DSpotCompiler.compile(DSpotCompiler.java:139)
-	at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:213)
-	at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
-	at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
+
+Something bad happened during assertion amplification
+eu.stamp_project.dspot.common.miscellaneous.AmplificationException: 
+	at eu.stamp_project.dspot.DSpot.selectImprovingTestCases(DSpot.java:237)
+	at eu.stamp_project.dspot.DSpot.onlyAssertionGeneration(DSpot.java:102)
+	at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:73)
+	at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
 	at eu.stamp_project.Main.main(Main.java:20)
 	at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)

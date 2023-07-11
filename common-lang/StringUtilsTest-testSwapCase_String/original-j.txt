@@ -1,0 +1,15 @@
+@Test
+    public void testSwapCase_String() {
+        assertNull(StringUtils.swapCase(null));
+        assertEquals("", StringUtils.swapCase(""));
+        assertEquals("  ", StringUtils.swapCase("  "));
+        assertEquals("i", WordUtils.swapCase("I"));
+        assertEquals("I", WordUtils.swapCase("i"));
+        assertEquals("I AM HERE 123", StringUtils.swapCase("i am here 123"));
+        assertEquals("i aM hERE 123", StringUtils.swapCase("I Am Here 123"));
+        assertEquals("I AM here 123", StringUtils.swapCase("i am HERE 123"));
+        assertEquals("i am here 123", StringUtils.swapCase("I AM HERE 123"));
+        final String test = "This String contains a TitleCase character: ?";
+        final String expect = "tHIS sTRING CONTAINS A tITLEcASE CHARACTER: ?";
+
+    }

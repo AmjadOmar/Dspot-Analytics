@@ -1,0 +1,37 @@
+@Test(timeout = 10000)
+    public void testSwapCase_String_ass3() throws Exception {
+        String o_testSwapCase_String__1 = StringUtils.swapCase(null);
+        Assert.assertNull(o_testSwapCase_String__1);
+        String o_testSwapCase_String__2 = StringUtils.swapCase("");
+        Assert.assertEquals("", o_testSwapCase_String__2);
+        String o_testSwapCase_String__3 = StringUtils.swapCase("  ");
+        Assert.assertEquals("  ", o_testSwapCase_String__3);
+        String o_testSwapCase_String__4 = WordUtils.swapCase("I");
+        Assert.assertEquals("i", o_testSwapCase_String__4);
+        String o_testSwapCase_String__5 = WordUtils.swapCase("i");
+        Assert.assertEquals("I", o_testSwapCase_String__5);
+        String o_testSwapCase_String__6 = StringUtils.swapCase("i am here 123");
+        Assert.assertEquals("I AM HERE 123", o_testSwapCase_String__6);
+        String o_testSwapCase_String__7 = StringUtils.swapCase("I Am Here 123");
+        Assert.assertEquals("i aM hERE 123", o_testSwapCase_String__7);
+        String o_testSwapCase_String__8 = StringUtils.swapCase("i am HERE 123");
+        Assert.assertEquals("I AM here 123", o_testSwapCase_String__8);
+        String o_testSwapCase_String__9 = StringUtils.swapCase("I AM HERE 123");
+        Assert.assertEquals("i am here 123", o_testSwapCase_String__9);
+        final String test = "This String contains a TitleCase character: ?";
+        Assert.assertEquals("This String contains a TitleCase character: ?", test);
+        final String expect = "tHIS sTRING CONTAINS A tITLEcASE CHARACTER: ?";
+        Assert.assertEquals("tHIS sTRING CONTAINS A tITLEcASE CHARACTER: ?", expect);
+
+        Assert.assertNull(o_testSwapCase_String__1);
+        Assert.assertEquals("", o_testSwapCase_String__2);
+        Assert.assertEquals("  ", o_testSwapCase_String__3);
+        Assert.assertEquals("i", o_testSwapCase_String__4);
+        Assert.assertEquals("I", o_testSwapCase_String__5);
+        Assert.assertEquals("I AM HERE 123", o_testSwapCase_String__6);
+        Assert.assertEquals("i aM hERE 123", o_testSwapCase_String__7);
+        Assert.assertEquals("I AM here 123", o_testSwapCase_String__8);
+        Assert.assertEquals("i am here 123", o_testSwapCase_String__9);
+        Assert.assertEquals("This String contains a TitleCase character: ?", test);
+        Assert.assertEquals("tHIS sTRING CONTAINS A tITLEcASE CHARACTER: ?", expect);
+    }
