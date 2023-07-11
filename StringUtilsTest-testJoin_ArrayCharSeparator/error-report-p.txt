@@ -1,6 +1,6 @@
 DSpot encountered 2 error(s) during amplification.
 Something bad happened during selection to keep amplified tests (post-amplification).
-spoon.support.compiler.SnippetCompilationError: The final field StringUtilsTest.WHITESPACE cannot be assigned at StringUtilsTest.java:38
+spoon.support.compiler.SnippetCompilationError: The final field StringUtilsTest.WHITESPACE cannot be assigned at StringUtilsTest.java:37
 	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.reportProblemsWhenCompiling(JDTBasedSpoonCompiler.java:615)
 	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.compile(JDTBasedSpoonCompiler.java:169)
 	at eu.stamp_project.dspot.common.compilation.DSpotCompiler.compile(DSpotCompiler.java:139)
