@@ -1,11 +1,15 @@
-mvn : java.lang.NullPointerException
+mvn : spoon.support.compiler.SnippetCompilationError: The import org.apache.commons.lang3.reflect.testbed cannot be resolved at FieldUtilsTest.java:6
 At line:1 char:1
-+ mvn -e eu.stamp-project:dspot-maven:amplify-unit-tests -Dtest="org.ap ...
++ mvn -e eu.stamp-project:dspot-maven:amplify-unit-tests -Dtest-criteri ...
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (java.lang.NullPointerException:String) [], RemoteException
+    + CategoryInfo          : NotSpecified: (spoon.support.c...tilsTest.java:6:String) [], RemoteException
     + FullyQualifiedErrorId : NativeCommandError
  
-	at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:88)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.reportProblemsWhenCompiling(JDTBasedSpoonCompiler.java:615)
+	at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.compile(JDTBasedSpoonCompiler.java:169)
+	at eu.stamp_project.dspot.common.compilation.DSpotCompiler.compile(DSpotCompiler.java:139)
+	at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:213)
+	at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
 	at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
 	at eu.stamp_project.Main.main(Main.java:20)
 	at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
