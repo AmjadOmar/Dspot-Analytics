@@ -1,0 +1,20 @@
+public void testInvokeExactMethod_failAssert0() throws Exception {
+        try {
+            MethodUtils.invokeExactMethod(testBean, "foo", "");
+            MethodUtils.invokeExactMethod(testBean, "foo", new Object());
+            MethodUtils.invokeExactMethod(testBean, "foo", NumberUtils.INTEGER_ONE);
+            MethodUtils.invokeExactMethod(testBean, "foo", new Object[]{ NumberUtils.DOUBLE_ONE }, new Class[]{ Double.TYPE });
+            {
+                MethodUtils.invokeExactMethod(testBean, "foo", NumberUtils.BYTE_ONE);
+            }
+            {
+                MethodUtils.invokeExactMethod(testBean, "foo", NumberUtils.LONG_ONE);
+            }
+            {
+                MethodUtils.invokeExactMethod(testBean, "foo", Boolean.TRUE);
+            }
+            TestCase.fail("testInvokeExactMethod should have thrown NoSuchMethodException");
+        } catch (NoSuchMethodException expected) {
+            TestCase.assertEquals("No such accessible method: foo() on object: org.apache.commons.lang3.reflect.MethodUtilsTest$TestBean", expected.getMessage());
+        }
+    }
