@@ -1,0 +1,22 @@
+public void testGetSet_failAssert0() throws Exception {
+        try {
+            final MutableBoolean mutBool = new MutableBoolean(false);
+            new MutableBoolean().booleanValue();
+            mutBool.setValue(Boolean.TRUE);
+            mutBool.booleanValue();
+            mutBool.setValue(false);
+            mutBool.booleanValue();
+            mutBool.setValue(true);
+            mutBool.booleanValue();
+            mutBool.booleanValue();
+            {
+                mutBool.setValue(null);
+            }
+            {
+                mutBool.setValue("false");
+            }
+            TestCase.fail("testGetSet should have thrown NullPointerException");
+        } catch (NullPointerException expected) {
+            TestCase.assertEquals(null, expected.getMessage());
+        }
+    }
