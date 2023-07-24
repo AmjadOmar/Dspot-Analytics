@@ -1,11 +1,12 @@
 mvn : java.lang.NullPointerException
 At line:1 char:1
-+ mvn eu.stamp-project:dspot-maven:amplify-unit-tests -Dtest="org.apach ...
++ mvn eu.stamp-project:dspot-maven:amplify-unit-tests -Dtest-criterion= ...
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : NotSpecified: (java.lang.NullPointerException:String) [], RemoteException
     + FullyQualifiedErrorId : NativeCommandError
  
-	at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:88)
+	at eu.stamp_project.dspot.selector.JacocoCoverageSelector.report(JacocoCoverageSelector.java:192)
+	at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:87)
 	at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
 	at eu.stamp_project.Main.main(Main.java:20)
 	at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
