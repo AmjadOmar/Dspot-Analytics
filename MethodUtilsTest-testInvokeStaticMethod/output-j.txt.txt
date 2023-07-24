@@ -1,0 +1,19 @@
+public void testInvokeStaticMethod_failAssert0() throws Exception {
+        try {
+            MethodUtils.invokeStaticMethod(TestBean.class, "bar", ((Object[]) (ArrayUtils.EMPTY_CLASS_ARRAY)));
+            MethodUtils.invokeStaticMethod(TestBean.class, "bar", ((Object[]) (null)));
+            MethodUtils.invokeStaticMethod(TestBean.class, "bar", "");
+            MethodUtils.invokeStaticMethod(TestBean.class, "bar", new Object());
+            MethodUtils.invokeStaticMethod(TestBean.class, "bar", Boolean.TRUE);
+            MethodUtils.invokeStaticMethod(TestBean.class, "bar", NumberUtils.INTEGER_ONE);
+            MethodUtils.invokeStaticMethod(TestBean.class, "bar", NumberUtils.BYTE_ONE);
+            MethodUtils.invokeStaticMethod(TestBean.class, "bar", NumberUtils.LONG_ONE);
+            MethodUtils.invokeStaticMethod(TestBean.class, "bar", NumberUtils.DOUBLE_ONE);
+            {
+                MethodUtils.invokeStaticMethod(TestBean.class, "does_not_exist");
+            }
+            TestCase.fail("testInvokeStaticMethod should have thrown NoSuchMethodException");
+        } catch (NoSuchMethodException expected) {
+            TestCase.assertEquals("No such accessible method: does_not_exist() on class: org.apache.commons.lang3.reflect.MethodUtilsTest$TestBean", expected.getMessage());
+        }
+    }
