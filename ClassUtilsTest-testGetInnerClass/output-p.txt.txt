@@ -1,0 +1,7 @@
+public void testGetInnerClass_ass3() throws ClassNotFoundException {
+        ClassUtils.getClass("org.apache.commons.lang3.ClassUtilsTest.Inner.DeeplyNested");
+        ClassUtils.getClass("org.apache.commons.lang3.ClassUtilsTest.Inner$DeeplyNested");
+        ClassUtils.getClass("org.apache.commons.lang3.ClassUtilsTest$Inner$DeeplyNested");
+        ClassUtils.getClass("org.apache.commons.lang3.ClassUtilsTest$Inner.DeeplyNested");
+
+    }
