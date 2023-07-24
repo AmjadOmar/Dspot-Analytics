@@ -1,0 +1,20 @@
+public void testInvokeExactStaticMethod_failAssert0() throws Exception {
+        try {
+            MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", "");
+            MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", new Object());
+            MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", NumberUtils.INTEGER_ONE);
+            MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", new Object[]{ NumberUtils.DOUBLE_ONE }, new Class[]{ Double.TYPE });
+            {
+                MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", NumberUtils.BYTE_ONE);
+            }
+            {
+                MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", NumberUtils.LONG_ONE);
+            }
+            {
+                MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", Boolean.TRUE);
+            }
+            TestCase.fail("testInvokeExactStaticMethod should have thrown NoSuchMethodException");
+        } catch (NoSuchMethodException expected) {
+            TestCase.assertEquals("No such accessible method: bar() on class: org.apache.commons.lang3.reflect.MethodUtilsTest$TestBean", expected.getMessage());
+        }
+    }

@@ -1,0 +1,21 @@
+public void testInvokeExactStaticMethod() throws Exception {
+        Assert.assertEquals("bar(String)", MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", ""));
+        Assert.assertEquals("bar(Object)", MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", new Object()));
+        Assert.assertEquals("bar(Integer)", MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", NumberUtils.INTEGER_ONE));
+        Assert.assertEquals("bar(double)", MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", new Object[]{ NumberUtils.DOUBLE_ONE }, new Class[]{ Double.TYPE }));
+        try {
+            MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", NumberUtils.BYTE_ONE);
+            Assert.fail("should throw NoSuchMethodException");
+        } catch (NoSuchMethodException e) {
+        }
+        try {
+            MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", NumberUtils.LONG_ONE);
+            Assert.fail("should throw NoSuchMethodException");
+        } catch (NoSuchMethodException e) {
+        }
+        try {
+            MethodUtils.invokeExactStaticMethod(TestBean.class, "bar", Boolean.TRUE);
+            Assert.fail("should throw NoSuchMethodException");
+        } catch (NoSuchMethodException e) {
+        }
+    }
