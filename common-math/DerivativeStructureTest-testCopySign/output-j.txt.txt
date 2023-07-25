@@ -1,0 +1,44 @@
+public void testCopySign_ass3() throws Exception {
+        DerivativeStructure minusOne = new DerivativeStructure(1, 1, 0, -1.0);
+        Assert.assertEquals(-1.0, ((double) (((DerivativeStructure) (minusOne)).getValue())), 0.1);
+        Assert.assertEquals(0, ((int) (((DerivativeStructure) (minusOne)).getExponent())));
+        Assert.assertArrayEquals(new double[]{-1.0,1.0}, ((DerivativeStructure) (minusOne)).getAllDerivatives(), 0.1);
+        Assert.assertEquals(1, ((int) (((DerivativeStructure) (minusOne)).getFreeParameters())));
+        Assert.assertEquals(1, ((int) (((DerivativeStructure) (minusOne)).getOrder())));
+        double o_testCopySign__4 = minusOne.copySign(+1.0).getPartialDerivative(0);
+        Assert.assertEquals(1.0, ((double) (o_testCopySign__4)), 0.1);
+        double o_testCopySign__7 = minusOne.copySign(+1.0).getPartialDerivative(1);
+        Assert.assertEquals(-1.0, ((double) (o_testCopySign__7)), 0.1);
+        double o_testCopySign__10 = minusOne.copySign(-1.0).getPartialDerivative(0);
+        Assert.assertEquals(-1.0, ((double) (o_testCopySign__10)), 0.1);
+        double o_testCopySign__13 = minusOne.copySign(-1.0).getPartialDerivative(1);
+        Assert.assertEquals(1.0, ((double) (o_testCopySign__13)), 0.1);
+        double o_testCopySign__16 = minusOne.copySign(+0.0).getPartialDerivative(0);
+        Assert.assertEquals(1.0, ((double) (o_testCopySign__16)), 0.1);
+        double o_testCopySign__19 = minusOne.copySign(+0.0).getPartialDerivative(1);
+        Assert.assertEquals(-1.0, ((double) (o_testCopySign__19)), 0.1);
+        double o_testCopySign__22 = minusOne.copySign(-0.0).getPartialDerivative(0);
+        Assert.assertEquals(-1.0, ((double) (o_testCopySign__22)), 0.1);
+        double o_testCopySign__25 = minusOne.copySign(-0.0).getPartialDerivative(1);
+        Assert.assertEquals(1.0, ((double) (o_testCopySign__25)), 0.1);
+        double o_testCopySign__28 = minusOne.copySign(Double.NaN).getPartialDerivative(0);
+        Assert.assertEquals(1.0, ((double) (o_testCopySign__28)), 0.1);
+        double o_testCopySign__30 = minusOne.copySign(Double.NaN).getPartialDerivative(1);
+        Assert.assertEquals(-1.0, ((double) (o_testCopySign__30)), 0.1);
+
+        Assert.assertEquals(-1.0, ((double) (((DerivativeStructure) (minusOne)).getValue())), 0.1);
+        Assert.assertEquals(0, ((int) (((DerivativeStructure) (minusOne)).getExponent())));
+        Assert.assertArrayEquals(new double[]{-1.0,1.0}, ((DerivativeStructure) (minusOne)).getAllDerivatives(), 0.1);
+        Assert.assertEquals(1, ((int) (((DerivativeStructure) (minusOne)).getFreeParameters())));
+        Assert.assertEquals(1, ((int) (((DerivativeStructure) (minusOne)).getOrder())));
+        Assert.assertEquals(1.0, ((double) (o_testCopySign__4)), 0.1);
+        Assert.assertEquals(-1.0, ((double) (o_testCopySign__7)), 0.1);
+        Assert.assertEquals(-1.0, ((double) (o_testCopySign__10)), 0.1);
+        Assert.assertEquals(1.0, ((double) (o_testCopySign__13)), 0.1);
+        Assert.assertEquals(1.0, ((double) (o_testCopySign__16)), 0.1);
+        Assert.assertEquals(-1.0, ((double) (o_testCopySign__19)), 0.1);
+        Assert.assertEquals(-1.0, ((double) (o_testCopySign__22)), 0.1);
+        Assert.assertEquals(1.0, ((double) (o_testCopySign__25)), 0.1);
+        Assert.assertEquals(1.0, ((double) (o_testCopySign__28)), 0.1);
+        Assert.assertEquals(-1.0, ((double) (o_testCopySign__30)), 0.1);
+    }
