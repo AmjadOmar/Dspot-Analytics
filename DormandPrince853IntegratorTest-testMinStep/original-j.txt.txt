@@ -5,7 +5,7 @@ public void testMinStep() throws DerivativeException, IntegratorException {
             double maxStep = pb.getFinalTime() - pb.getInitialTime();
             double scalAbsoluteTolerance = 1.0E-15;
             double scalRelativeTolerance = 1.0E-15;
-            FirstOrderIntegrator integ = new DormandPrince54Integrator(minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
+            FirstOrderIntegrator integ = new DormandPrince853Integrator(minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
             TestProblemHandler handler = new TestProblemHandler(pb);
             integ.setStepHandler(handler);
             integ.integrate(pb, pb.getInitialTime(), pb.getInitialState(), pb.getFinalTime(), new double[pb.getDimension()]);

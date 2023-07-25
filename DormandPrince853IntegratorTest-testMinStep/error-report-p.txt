@@ -1,19 +1,12 @@
-DSpot encountered 1 error(s) during amplification.
-Something bad happened when DSpot tried to computed the original mutation score.
-This is usually due to the value of the command line option --pit-filter-classes-to-keep.
-Specify the filter of classes to keep used by PIT. This allow you restrict the scope of the mutation done by PIT. If this is not specified, DSpot will try to build on the fly a filter that takes into account the largest number of classes, e.g. the topest package. 
-This is can be also due to a specific configuration of your test suite. If any test fails,
-PIT (and so DSpot) won't be able to be executed. Please, check your environment variables,
-external files, etc. You can use --excluded-classes and --excluded-test-cases
- to exclude respectively specific test classes ans test cases.
-java.lang.RuntimeException: java.lang.RuntimeException: Maven build failed! Enable verbose mode for more information (--verbose)
-	at eu.stamp_project.dspot.common.automaticbuilder.maven.MavenAutomaticBuilder.runPit(MavenAutomaticBuilder.java:156)
-	at eu.stamp_project.dspot.common.automaticbuilder.maven.MavenAutomaticBuilder.runPit(MavenAutomaticBuilder.java:162)
-	at eu.stamp_project.dspot.selector.PitMutantScoreSelector.init(PitMutantScoreSelector.java:109)
-	at eu.stamp_project.dspot.common.configuration.AmplificationSetup.firstSelectorSetup(AmplificationSetup.java:129)
-	at eu.stamp_project.dspot.DSpot.setupSelector(DSpot.java:86)
-	at eu.stamp_project.dspot.DSpot.amplification(DSpot.java:70)
-	at eu.stamp_project.dspot.DSpot.run(DSpot.java:59)
+mvn : java.lang.NullPointerException
+At line:1 char:1
++ mvn eu.stamp-project:dspot-maven:amplify-unit-tests -Dtest="org.apach ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (java.lang.NullPointerException:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+	at eu.stamp_project.dspot.common.configuration.AmplificationSetup.postAmplification(AmplificationSetup.java:88)
+	at eu.stamp_project.dspot.DSpot.run(DSpot.java:62)
 	at eu.stamp_project.Main.main(Main.java:20)
 	at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:29)
 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
@@ -40,6 +33,3 @@ java.lang.RuntimeException: java.lang.RuntimeException: Maven build failed! Enab
 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
-Caused by: java.lang.RuntimeException: Maven build failed! Enable verbose mode for more information (--verbose)
-	at eu.stamp_project.dspot.common.automaticbuilder.maven.MavenAutomaticBuilder.runPit(MavenAutomaticBuilder.java:153)
-	... 32 more

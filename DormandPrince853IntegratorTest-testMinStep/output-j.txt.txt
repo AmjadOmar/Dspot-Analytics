@@ -6,13 +6,13 @@ public void testMinStep_failAssert0() throws DerivativeException, IntegratorExce
                 double maxStep = pb.getFinalTime() - pb.getInitialTime();
                 double scalAbsoluteTolerance = 1.0E-15;
                 double scalRelativeTolerance = 1.0E-15;
-                FirstOrderIntegrator integ = new DormandPrince54Integrator(minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
+                FirstOrderIntegrator integ = new DormandPrince853Integrator(minStep, maxStep, scalAbsoluteTolerance, scalRelativeTolerance);
                 TestProblemHandler handler = new TestProblemHandler(pb);
                 integ.setStepHandler(handler);
                 integ.integrate(pb, pb.getInitialTime(), pb.getInitialState(), pb.getFinalTime(), new double[pb.getDimension()]);
             }
             TestCase.fail("testMinStep should have thrown IntegratorException");
         } catch (IntegratorException expected) {
-            TestCase.assertEquals("minimal step size (0.4) reached, integration needs 0.08000000000000002", expected.getMessage());
+            TestCase.assertEquals("minimal step size (0.4) reached, integration needs 0.0832949049368991", expected.getMessage());
         }
     }
