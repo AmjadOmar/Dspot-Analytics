@@ -1,0 +1,27 @@
+public void testExpSpecialCases_ass3() throws Exception {
+        double x;
+        x = FastMath.exp(-745.1332191019411);
+        if (x != Double.MIN_VALUE) {
+            throw new RuntimeException("exp(-745.1332191019411) should be Double.MIN_VALUE");
+        }
+        x = FastMath.exp(-745.1332191019412);
+        if (x != 0.0) {
+            throw new RuntimeException("exp(-745.1332191019412) should be 0.0");
+        }
+        x = FastMath.exp(Double.NaN);
+        if (x == x) {
+            throw new RuntimeException("exp of NaN should be NaN");
+        }
+        x = FastMath.exp(Double.POSITIVE_INFINITY);
+        if (x != Double.POSITIVE_INFINITY) {
+            throw new RuntimeException("exp of infinity should be infinity");
+        }
+        x = FastMath.exp(Double.NEGATIVE_INFINITY);
+        if (x != 0.0) {
+            throw new RuntimeException("exp of -infinity should be 0.0");
+        }
+        x = FastMath.exp(1.0);
+        if (x != Math.E) {
+            throw new RuntimeException("exp(1) should be Math.E");
+        }
+    }
