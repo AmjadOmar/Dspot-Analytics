@@ -1,0 +1,25 @@
+public void testAsinSpecialCases_ass3() throws Exception {
+        double x;
+        x = FastMath.asin(Double.NaN);
+        if (x == x) {
+            throw new RuntimeException("asin(NaN) should NaN");
+        }
+        x = FastMath.asin(-1.1);
+        if (x == x) {
+            throw new RuntimeException("asin(-1.1) should NaN");
+        }
+        x = FastMath.asin(1.1);
+        if (x == x) {
+            throw new RuntimeException("asin(-1.1) should NaN");
+        }
+        double o_testAsinSpecialCases__21 = FastMath.asin(1.0);
+        Assert.assertEquals(1.5707963267948966, ((double) (o_testAsinSpecialCases__21)), 0.1);
+        double double_0 = FastMath.PI / 2.0;
+        double o_testAsinSpecialCases__23 = FastMath.asin(-1.0);
+        Assert.assertEquals(-1.5707963267948966, ((double) (o_testAsinSpecialCases__23)), 0.1);
+        double double_1 = (-FastMath.PI) / 2.0;
+        double o_testAsinSpecialCases__27 = FastMath.asin(0.0);
+        Assert.assertEquals(0.0, ((double) (o_testAsinSpecialCases__27)), 0.1);
+        Assert.assertEquals(1.5707963267948966, ((double) (o_testAsinSpecialCases__21)), 0.1);
+        Assert.assertEquals(-1.5707963267948966, ((double) (o_testAsinSpecialCases__23)), 0.1);
+    }
