@@ -1,0 +1,31 @@
+public void testLogSpecialCases_ass3() throws Exception {
+        double x;
+        x = FastMath.log(0.0);
+        if (x != Double.NEGATIVE_INFINITY) {
+            throw new RuntimeException("Log of zero should be -Inf");
+        }
+        x = FastMath.log(-0.0);
+        if (x != Double.NEGATIVE_INFINITY) {
+            throw new RuntimeException("Log of zero should be -Inf");
+        }
+        x = FastMath.log(Double.NaN);
+        if (x == x) {
+            throw new RuntimeException("Log of NaN should be NaN");
+        }
+        x = FastMath.log(-1.0);
+        if (x == x) {
+            throw new RuntimeException("Log of negative number should be NaN");
+        }
+        x = FastMath.log(Double.MIN_VALUE);
+        if (x != (-744.4400719213812)) {
+            throw new RuntimeException("Log of Double.MIN_VALUE should be -744.4400719213812");
+        }
+        x = FastMath.log(-1.0);
+        if (x == x) {
+            throw new RuntimeException("Log of negative number should be NaN");
+        }
+        x = FastMath.log(Double.POSITIVE_INFINITY);
+        if (x != Double.POSITIVE_INFINITY) {
+            throw new RuntimeException("Log of infinity should be infinity");
+        }
+    }
