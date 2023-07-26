@@ -1,0 +1,25 @@
+public void testAcosSpecialCases_ass3() throws Exception {
+        double x;
+        x = FastMath.acos(Double.NaN);
+        if (x == x) {
+            throw new RuntimeException("acos(NaN) should NaN");
+        }
+        x = FastMath.acos(-1.1);
+        if (x == x) {
+            throw new RuntimeException("acos(-1.1) should NaN");
+        }
+        x = FastMath.acos(1.1);
+        if (x == x) {
+            throw new RuntimeException("acos(-1.1) should NaN");
+        }
+        double o_testAcosSpecialCases__21 = FastMath.acos(-1.0);
+        Assert.assertEquals(3.141592653589793, ((double) (o_testAcosSpecialCases__21)), 0.1);
+        double o_testAcosSpecialCases__23 = FastMath.acos(1.0);
+        Assert.assertEquals(0.0, ((double) (o_testAcosSpecialCases__23)), 0.1);
+        double o_testAcosSpecialCases__24 = FastMath.acos(0.0);
+        Assert.assertEquals(1.5707963267948966, ((double) (o_testAcosSpecialCases__24)), 0.1);
+        double double_0 = FastMath.PI / 2.0;
+        Assert.assertEquals(3.141592653589793, ((double) (o_testAcosSpecialCases__21)), 0.1);
+        Assert.assertEquals(0.0, ((double) (o_testAcosSpecialCases__23)), 0.1);
+        Assert.assertEquals(1.5707963267948966, ((double) (o_testAcosSpecialCases__24)), 0.1);
+    }
