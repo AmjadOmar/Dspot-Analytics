@@ -1,0 +1,12 @@
+public void testDimensionCheck_failAssert0() throws Exception {
+        try {
+            {
+                TestProblem1 pb = new TestProblem1();
+                HighamHall54Integrator integrator = new HighamHall54Integrator(0.0, 1.0, 1.0E-10, 1.0E-10);
+                integrator.integrate(pb, 0.0, new double[pb.getDimension() + 10], 1.0, new double[pb.getDimension() + 10]);
+            }
+            TestCase.fail("testDimensionCheck should have thrown IntegratorException");
+        } catch (IntegratorException expected) {
+            TestCase.assertEquals("dimensions mismatch: ODE problem has dimension 2, initial state vector has dimension 12", expected.getMessage());
+        }
+    }

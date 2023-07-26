@@ -1,0 +1,11 @@
+public void testDimensionCheck() {
+        try {
+            TestProblem1 pb = new TestProblem1();
+            HighamHall54Integrator integrator = new HighamHall54Integrator(0.0, 1.0, 1.0E-10, 1.0E-10);
+            integrator.integrate(pb, 0.0, new double[pb.getDimension() + 10], 1.0, new double[pb.getDimension() + 10]);
+            Assert.fail("an exception should have been thrown");
+        } catch (DerivativeException de) {
+            Assert.fail("wrong exception caught");
+        } catch (IntegratorException ie) {
+        }
+    }
