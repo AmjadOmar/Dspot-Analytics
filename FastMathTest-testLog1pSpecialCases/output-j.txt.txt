@@ -1,0 +1,7 @@
+ public void testLog1pSpecialCases_ass3() throws Exception {
+        double x;
+        x = FastMath.log1p(-1.0);
+        if (x != Double.NEGATIVE_INFINITY) {
+            throw new RuntimeException("Log1p of -1 should be -infinity");
+        }
+    }
